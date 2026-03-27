@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Received — Austin Media Blasting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,600;1,400&family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1e1e1b;
+    --charcoal-3: #111110;
+    --cream: #f5f0e6;
+    --sand: #c4996b;
+    --teal: #0a8fa6;
+    --white: #ffffff;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--charcoal-3);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    -webkit-font-smoothing: antialiased;
+  }
+  .icon {
+    width: 72px; height: 72px;
+    background: rgba(10,143,166,0.12);
+    border: 1px solid rgba(10,143,166,0.3);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 2rem;
+    font-size: 2rem;
+  }
+  .eyebrow {
+    font-size: 0.6875rem; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--sand); margin-bottom: 1rem;
+  }
+  h1 {
+    font-family: 'Cormorant', serif;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 600; line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+  h1 em { font-style: italic; color: var(--sand); }
+  p {
+    font-size: 1rem; font-weight: 300; line-height: 1.7;
+    color: rgba(255,255,255,0.5);
+    max-width: 420px; margin: 0 auto 2.5rem;
+  }
+  .actions { display: flex; gap: 0.875rem; flex-wrap: wrap; justify-content: center; }
+  .btn-teal {
+    font-size: 0.8125rem; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 0.9rem 2rem;
+    background: var(--teal); color: var(--white);
+    border-radius: 2px; text-decoration: none;
+    transition: background 0.2s;
+  }
+  .btn-teal:hover { background: #077a8e; }
+  .btn-outline {
+    font-size: 0.8125rem; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 0.9rem 2rem;
+    border: 1px solid rgba(255,255,255,0.25); color: var(--white);
+    border-radius: 2px; text-decoration: none;
+    transition: border-color 0.2s;
+  }
+  .btn-outline:hover { border-color: rgba(255,255,255,0.6); }
+  .divider {
+    width: 2rem; height: 1px;
+    background: var(--sand); margin: 2.5rem auto;
+  }
+  .phone {
+    font-size: 0.75rem; font-weight: 300;
+    color: rgba(255,255,255,0.3); letter-spacing: 0.08em;
+  }
+  .phone a { color: var(--teal); text-decoration: none; }
+  @media (max-width: 480px) {
+    .actions { flex-direction: column; }
+    .btn-teal, .btn-outline { text-align: center; }
+  }
+</style>
+</head>
+<body>
+  <div class="icon">✓</div>
+  <p class="eyebrow">Austin Media Blasting</p>
+  <h1>Request<br><em>Received.</em></h1>
+  <p>We'll review your project details and follow up within one business day to confirm your estimate and schedule.</p>
+  <div class="actions">
+    <a href="/" class="btn-teal">Back to Home</a>
+    <a href="tel:5129888629" class="btn-outline">512.988.8629</a>
+  </div>
+  <div class="divider"></div>
+  <p class="phone">Questions? Call us directly at <a href="tel:5129888629">512.988.8629</a></p>
+</body>
+</html>
